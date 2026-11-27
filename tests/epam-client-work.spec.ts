@@ -5,7 +5,7 @@ test('navigate to EPAM Client Work from the Services menu', async ({ page }) => 
   await page.goto('https://www.epam.com/');
 
   // Step 2: Select "Services" from the header menu.
-  await page.getByRole('link', { name: 'Services' }).first().click();
+  await page.getByRole('link', { name: 'Services' }).nth(1).click();
 
   // Step 3: Click the "Explore Our Client Work" link.
   await page.getByRole('link', { name: 'Explore Our Client Work' }).click();
